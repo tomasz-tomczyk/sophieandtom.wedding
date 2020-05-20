@@ -10,6 +10,8 @@ use Mix.Config
 # which you should run after static files are built and
 # before starting your production server.
 config :wedding, WeddingWeb.Endpoint,
+  http: [port: {:system, "PORT"}],
+  server: true,
   load_from_system_env: true,
   url: [host: "sophieandtom.wedding", port: 443],
   check_origin: ["//sophieandtom.wedding", "//www.sophieandtom.wedding"],
