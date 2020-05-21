@@ -21,6 +21,9 @@ config :wedding, WeddingWeb.Endpoint,
 # Do not print debug messages in production
 config :logger, level: :info
 
+config :wedding,
+  canonical_host: "sophieandtom.wedding"
+
 # ## SSL Support
 #
 # To get SSL working, you will need to add the `https` key
