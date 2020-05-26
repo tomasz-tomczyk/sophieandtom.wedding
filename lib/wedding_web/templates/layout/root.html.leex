@@ -1,20 +1,148 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8"/>
-    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-    <%= csrf_meta_tag() %>
-    <%= live_title_tag assigns[:page_title] || "", suffix: " · Sophie & Tom's wedding" %>
-    <link rel="stylesheet" href="<%= Routes.static_path(@conn, "/css/app.css") %>"/>
-    <link rel="apple-touch-icon" sizes="180x180" href="<%= Routes.static_path(@conn, "/images/apple-touch-icon.png") %>">
-    <link rel="icon" type="image/png" sizes="32x32" href="<%= Routes.static_path(@conn, "/images/favicon-32x32.png") %>">
-    <link rel="icon" type="image/png" sizes="16x16" href="<%= Routes.static_path(@conn, "/images/favicon-16x16.png") %>">
-    <script defer type="text/javascript" src="<%= Routes.static_path(@conn, "/js/app.js") %>"></script>
-  </head>
-  <body>
-    <h1 class="text-orange-500 text-5xl font-bold text-center">Sophie & Tom</h1>
 
-    <%= @inner_content %>
-  </body>
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <%= csrf_meta_tag() %>
+  <%= live_title_tag assigns[:page_title] || "", suffix: " · Sophie & Tom's wedding" %>
+  <link rel="stylesheet" href="<%= Routes.static_path(@conn, "/css/app.css") %>" />
+  <link rel="apple-touch-icon" sizes="180x180" href="<%= Routes.static_path(@conn, "/images/apple-touch-icon.png") %>">
+  <link rel="icon" type="image/png" sizes="32x32" href="<%= Routes.static_path(@conn, "/images/favicon-32x32.png") %>">
+  <link rel="icon" type="image/png" sizes="16x16" href="<%= Routes.static_path(@conn, "/images/favicon-16x16.png") %>">
+  <script defer type="text/javascript" src="<%= Routes.static_path(@conn, "/js/app.js") %>"></script>
+</head>
+
+<body>
+  <div class="bg-cover bg-center  h-auto text-white py-24 px-10 object-fill"
+    style="background-image: url(https://images.unsplash.com/photo-1515934751635-c81c6bc9a2d8?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=3150&q=80)">
+    <div class="md:w-1/2">
+      <p class="font-bold text-sm uppercase">26 September 2020</p>
+      <p class="text-3xl font-bold">Sophie &amp; Tom</p>
+    </div>
+  </div>
+  <div class="bg-gray-200">
+    <div class="container mx-auto py-8">
+      <div class="grid gap-4 sm:grid-cols-1 lg:grid-cols-2">
+        <div>
+          <div class="relative rounded-lg block md:flex bg-gray-100 shadow-xl" style="min-height: 19rem;">
+            <div class="relative w-full md:w-2/5 h-full overflow-hidden rounded-t-lg md:rounded-t-none md:rounded-l-lg"
+              style="min-height: 19rem;">
+              <img class="absolute inset-0 w-full h-full object-cover object-center"
+                src="https://upload.wikimedia.org/wikipedia/commons/0/00/CroydonTownHall.jpg" alt="">
+              <div class="absolute inset-0 w-full h-full opacity-75"></div>
+            </div>
+            <div class="w-full md:w-3/5 h-full flex items-center bg-gray-100 rounded-lg">
+              <div class="p-12 md:pr-24 md:pl-16 md:py-8">
+
+                <div class="flex items-center text-gray-400 -ml-6 mb-4">
+                  <svg class="fill-current w-5 h-5 mr-1" viewBox="0 0 20 20">
+                    <path
+                      d="M10 3.22l-.61-.6a5.5 5.5 0 0 0-7.78 7.77L10 18.78l8.39-8.4a5.5 5.5 0 0 0-7.78-7.77l-.61.61z" />
+                  </svg>
+                  <span class="text-gray-900 font-bold">Main Ceremony</span>
+                </div>
+                <div class="font-semibold text-gray-400 mb-4 -ml-6 flex items-center">
+                  <svg class="fill-current w-5 h-5 mr-1" viewBox="0 0 20 20">
+                    <path
+                      d="M10 20a10 10 0 1 1 0-20 10 10 0 0 1 0 20zm0-2a8 8 0 1 0 0-16 8 8 0 0 0 0 16zm-1-7.59V4h2v5.59l3.95 3.95-1.41 1.41L9 10.41z" />
+                  </svg>
+                  <time class="text-orange-500" datetime="2020-09-26T15:00">15:00 - 16:00</time>
+                </div>
+                <div class="text-gray-600">
+                  <div class="flex items-center text-gray-400">
+                    <svg class="fill-current w-5 h-5 mr-1 -ml-6" viewBox="0 0 20 20">
+                      <path d="M10 20S3 10.87 3 7a7 7 0 1 1 14 0c0 3.87-7 13-7 13zm0-11a2 2 0 1 0 0-4 2 2 0 0 0 0 4z" />
+                    </svg>
+
+                    <span class="block text-gray-600">Croydon City Hall</span>
+                  </div>
+                  Katharine St<br>Croydon<br>CR0 1NX
+                </div>
+                <a class="text-indigo-600 hover:text-orange-600 border-b-2 border-indigo-200 hover:border-orange-400 focus:text-orange-400 b-s-dotted"
+                  href="https://goo.gl/maps/o7zjwSYFhCh64MZz6" target="_blank">
+                  <span>Google Maps</span>
+                </a>
+
+                <div class="flex items-center text-gray-400 -ml-6 mt-2">
+                  <svg class="fill-current w-5 h-5 mr-1" viewBox="0 0 20 20">
+                    <path
+                      d="M2 14v-3H1a1 1 0 0 1-1-1 1 1 0 0 1 1-1h1l4-7h8l4 7h1a1 1 0 0 1 1 1 1 1 0 0 1-1 1h-1v6a1 1 0 0 1-1 1h-1a1 1 0 0 1-1-1v-1H5v1a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1v-3zm13.86-5L13 4H7L4.14 9h11.72zM5.5 14a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3zm9 0a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3z" />
+                  </svg>
+                  <a class="text-indigo-600 hover:text-orange-600 border-b-2 border-indigo-200 hover:border-orange-400 focus:text-orange-400 b-s-dotted"
+                    href="https://goo.gl/maps/EXuh2Y8H2y7EiFCj6" target="_blank">
+                    <span>Parking</span>
+                  </a>
+                </div>
+              </div>
+              <svg class="hidden md:block absolute inset-y-0 h-full w-24 fill-current text-gray-100 -ml-12"
+                viewBox="0 0 100 100" preserveAspectRatio="none">
+                <polygon points="50,0 100,0 50,100 0,100" />
+              </svg>
+            </div>
+          </div>
+        </div>
+        <div>
+          <div class="relative rounded-lg block md:flex bg-gray-100 shadow-xl" style="min-height: 19rem;">
+            <div class="relative w-full md:w-2/5 h-full overflow-hidden rounded-t-lg md:rounded-t-none md:rounded-l-lg"
+              style="min-height: 19rem;">
+              <img class="absolute inset-0 w-full h-full object-cover object-center"
+                src="https://cdn.venuescanner.com/photos/1LnS8/9f5b0c5960348af172d4b27fb3e86307.jpg" alt="">
+              <div class="absolute inset-0 w-full h-full opacity-75"></div>
+            </div>
+            <div class="w-full md:w-3/5 h-full flex items-center bg-gray-100 rounded-lg">
+              <div class="p-12 md:pr-24 md:pl-16 md:py-8">
+                <div class="flex items-center text-gray-400 -ml-6 mb-4">
+                  <svg class="fill-current w-5 h-5 mr-1" viewBox="0 0 20 20">
+                    <path d="M9 18v-7L0 2V0h20v2l-9 9v7l5 1v1H4v-1l5-1zm2-10a2 2 0 1 0 0-4 2 2 0 0 0 0 4z" />
+                  </svg>
+                  <span class="text-gray-900 font-bold">Wedding Party</span>
+                </div>
+                <div class="font-semibold text-gray-400 mb-4 -ml-6 flex items-center">
+                  <svg class="fill-current w-5 h-5 mr-1" viewBox="0 0 20 20">
+                    <path
+                      d="M10 20a10 10 0 1 1 0-20 10 10 0 0 1 0 20zm0-2a8 8 0 1 0 0-16 8 8 0 0 0 0 16zm-1-7.59V4h2v5.59l3.95 3.95-1.41 1.41L9 10.41z" />
+                  </svg>
+                  <time class="text-orange-500" datetime="2020-09-26T16:00">16:00 - 22:00</time>
+                </div>
+                <div class="text-gray-600">
+                  <div class="flex items-center text-gray-400">
+                    <svg class="fill-current w-5 h-5 mr-1 -ml-6" viewBox="0 0 20 20">
+                      <path d="M10 20S3 10.87 3 7a7 7 0 1 1 14 0c0 3.87-7 13-7 13zm0-11a2 2 0 1 0 0-4 2 2 0 0 0 0 4z" />
+                    </svg>
+
+                    <span class="block text-gray-600">The Duke's Head Pub</span>
+                  </div>
+                  379 Croydon Rd<br>
+                  Wallington<br>
+                  SM6 0BW
+                </div>
+                <a class="text-indigo-600 hover:text-orange-600 border-b-2 border-indigo-200 hover:border-orange-400 focus:text-orange-400 b-s-dotted"
+                  href="https://goo.gl/maps/o7zjwSYFhCh64MZz6" target="_blank">
+                  <span>Google Maps</span>
+                </a>
+
+                <div class="flex items-center text-gray-400 -ml-6 mt-2">
+                  <svg class="fill-current w-5 h-5 mr-1" viewBox="0 0 20 20">
+                    <path
+                      d="M2 14v-3H1a1 1 0 0 1-1-1 1 1 0 0 1 1-1h1l4-7h8l4 7h1a1 1 0 0 1 1 1 1 1 0 0 1-1 1h-1v6a1 1 0 0 1-1 1h-1a1 1 0 0 1-1-1v-1H5v1a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1v-3zm13.86-5L13 4H7L4.14 9h11.72zM5.5 14a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3zm9 0a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3z" />
+                  </svg>
+                  <span class=" text-gray-600">Parking at the vanue</span>
+                </div>
+
+              </div>
+              <svg class="hidden md:block absolute inset-y-0 h-full w-24 fill-current text-gray-100 -ml-12"
+                viewBox="0 0 100 100" preserveAspectRatio="none">
+                <polygon points="50,0 100,0 50,100 0,100" />
+              </svg>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <%= @inner_content %>
+</body>
+
 </html>

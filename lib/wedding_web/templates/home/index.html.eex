@@ -1,1 +1,191 @@
-Hello world
+<div class="container mx-auto">
+  <div class="p-5 mt-2 grid">
+    <div class="grid-cols-1">
+      <div class="flex flex-col md:flex-row border-b border-gray-200 pb-4 mb-4">
+        <div class="flex-1 flex flex-col md:flex-row ">
+          <div class="w-full md:w-1/4 px-3 mb-6 md:mb-0">
+            <label class="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2" for="grid-first-name">
+              Your name
+            </label>
+            <input
+              class="appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-200 rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white"
+              id="grid-first-name" type="text" placeholder="">
+          </div>
+
+          <div class="w-full md:w-1/4 px-3 mb-6 md:mb-0">
+            <label class="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2" for="grid-state">
+              Starter
+            </label>
+            <div class="relative">
+              <select
+                class="block appearance-none w-full bg-gray-200 border border-gray-200 text-gray-700 py-3 px-4 pr-8 rounded leading-tight focus:outline-none focus:bg-white focus:border-gray-500"
+                id="grid-state">
+                <option></option>
+              </select>
+              <div class="pointer-events-none absolute inset-y-0 right-0 flex items-center px-2 text-gray-700">
+                <svg class="fill-current h-4 w-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20">
+                  <path d="M9.293 12.95l.707.707L15.657 8l-1.414-1.414L10 10.828 5.757 6.586 4.343 8z" /></svg>
+              </div>
+            </div>
+          </div>
+
+          <div class="w-full md:w-1/4 px-3 mb-6 md:mb-0">
+            <label class="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2" for="grid-state">
+              Main
+            </label>
+            <div class="relative">
+              <select
+                class="block appearance-none w-full bg-gray-200 border border-gray-200 text-gray-700 py-3 px-4 pr-8 rounded leading-tight focus:outline-none focus:bg-white focus:border-gray-500"
+                id="grid-state">
+                <option></option>
+              </select>
+              <div class="pointer-events-none absolute inset-y-0 right-0 flex items-center px-2 text-gray-700">
+                <svg class="fill-current h-4 w-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20">
+                  <path d="M9.293 12.95l.707.707L15.657 8l-1.414-1.414L10 10.828 5.757 6.586 4.343 8z" /></svg>
+              </div>
+            </div>
+          </div>
+
+
+          <div class="w-full md:w-1/4 px-3 mb-6 md:mb-0">
+            <label class="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2" for="grid-state">
+              Dessert
+            </label>
+            <div class="relative">
+              <select
+                class="block appearance-none w-full bg-gray-200 border border-gray-200 text-gray-700 py-3 px-4 pr-8 rounded leading-tight focus:outline-none focus:bg-white focus:border-gray-500"
+                id="grid-state">
+                <option></option>
+              </select>
+              <div class="pointer-events-none absolute inset-y-0 right-0 flex items-center px-2 text-gray-700">
+                <svg class="fill-current h-4 w-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20">
+                  <path d="M9.293 12.95l.707.707L15.657 8l-1.414-1.414L10 10.828 5.757 6.586 4.343 8z" /></svg>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="flex flex-col md:flex-row border-b border-gray-200 pb-4 mb-4">
+        <div class="flex-1 flex flex-col md:flex-row">
+          <div class="w-full md:w-1/4 px-3 mb-6 md:mb-0">
+            <label class="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2" for="grid-first-name">
+              Guest
+            </label>
+            <input
+              class="appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-200 rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white"
+              id="grid-first-name" type="text" placeholder="">
+          </div>
+
+          <div class="w-full md:w-1/4 px-3 mb-6 md:mb-0">
+            <label class="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2 sm:visible md:invisible"
+              for="grid-state">
+              Starter
+            </label>
+            <div class="relative">
+              <select
+                class="block appearance-none w-full bg-gray-200 border border-gray-200 text-gray-700 py-3 px-4 pr-8 rounded leading-tight focus:outline-none focus:bg-white focus:border-gray-500"
+                id="grid-state">
+                <option></option>
+              </select>
+              <div class="pointer-events-none absolute inset-y-0 right-0 flex items-center px-2 text-gray-700">
+                <svg class="fill-current h-4 w-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20">
+                  <path d="M9.293 12.95l.707.707L15.657 8l-1.414-1.414L10 10.828 5.757 6.586 4.343 8z" /></svg>
+              </div>
+            </div>
+          </div>
+
+          <div class="w-full md:w-1/4 px-3 mb-6 md:mb-0">
+            <label class="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2 sm:visible md:invisible"
+              for="grid-state">
+              Main
+            </label>
+            <div class="relative">
+              <select
+                class="block appearance-none w-full bg-gray-200 border border-gray-200 text-gray-700 py-3 px-4 pr-8 rounded leading-tight focus:outline-none focus:bg-white focus:border-gray-500"
+                id="grid-state">
+                <option></option>
+              </select>
+              <div class="pointer-events-none absolute inset-y-0 right-0 flex items-center px-2 text-gray-700">
+                <svg class="fill-current h-4 w-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20">
+                  <path d="M9.293 12.95l.707.707L15.657 8l-1.414-1.414L10 10.828 5.757 6.586 4.343 8z" /></svg>
+              </div>
+            </div>
+          </div>
+
+
+          <div class="w-full md:w-1/4 px-3 mb-6 md:mb-0">
+            <label class="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2 sm:visible md:invisible"
+              for="grid-state">
+              Dessert
+            </label>
+            <div class="relative">
+              <select
+                class="block appearance-none w-full bg-gray-200 border border-gray-200 text-gray-700 py-3 px-4 pr-8 rounded leading-tight focus:outline-none focus:bg-white focus:border-gray-500"
+                id="grid-state">
+                <option></option>
+              </select>
+              <div class="pointer-events-none absolute inset-y-0 right-0 flex items-center px-2 text-gray-700">
+                <svg class="fill-current h-4 w-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20">
+                  <path d="M9.293 12.95l.707.707L15.657 8l-1.414-1.414L10 10.828 5.757 6.586 4.343 8z" /></svg>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="flex flex-col items-center md:flex-row border-b border-gray-200 pb-4 mb-4">
+        <div class="w-full md:w-1/4 px-3 mb-6 md:mb-0">
+          <label class="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2" for="grid-state">
+            Attending
+          </label>
+        </div>
+
+        <label class="md:w-1/4 block font-bold text-gray-700">
+          <input class="mr-2 leading-tight" type="radio" name="rsvp[event]">
+          <span class="text-sm">
+            Both
+          </span>
+        </label>
+
+        <label class="md:w-1/4 block font-normal text-gray-700">
+          <input class="mr-2 leading-tight" type="radio" name="rsvp[event]">
+          <span class="text-sm">
+            Main Ceremony
+          </span>
+        </label>
+
+        <label class="md:w-1/4 block font-normal text-gray-700">
+          <input class="mr-2 leading-tight" type="radio" name="rsvp[event]">
+          <span class="text-sm">
+            Wedding Party
+          </span>
+        </label>
+      </div>
+
+      <div class="flex flex-col items-center md:flex-row border-b border-gray-200 pb-4 mb-4">
+        <div class="w-full md:w-1/4 px-3 mb-6 md:mb-0">
+          <label class="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2" for="form[comments]">
+            Comments / special requirements
+          </label>
+        </div>
+
+        <label class="md:w-3/4 block font-bold text-gray-700">
+          <input
+            class="appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-200 rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white"
+            id="form[comments]" type="text" placeholder="">
+        </label>
+      </div>
+
+      <div class="flex flex-col md:flex-row">
+        <div class="flex flex-col md:flex-row">
+          <button class="text-sm  mx-2 w-32 focus:outline-none flex justify-center px-4 py-2 rounded font-bold cursor-pointer
+              hover:bg-orange-500 hover:text-orange-100
+              bg-gray-100
+              text-gray-700
+              border duration-200 ease-in-out
+              border-gray-600 transition">Submit</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

@@ -7,6 +7,14 @@
 
 @import "../node_modules/nprogress/nprogress.css";
 
+.b-s-dotted {
+  border-style: dotted;
+}
+
+.b-s-dotted:hover {
+  border-style: solid;
+}
+
 /* LiveView specific classes for your customizations */
 .invalid-feedback {
   color: #a94442;
