@@ -1,7 +1,17 @@
 <div class="container mx-auto">
   <div class="p-5 mt-2 grid">
     <div class="grid-cols-1">
+
+      <div class="flex items-center text-3xl font-semibold text-gray-800 px-3 mb-3">
+        <svg class="text-orange-400 fill-current w-6 h-6 items-center mr-2 " viewBox="0 0 20 20">
+          <path
+            d="M18 2a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V4c0-1.1.9-2 2-2h16zm-4.37 9.1L20 16v-2l-5.12-3.9L20 6V4l-10 8L0 4v2l5.12 4.1L0 14v2l6.37-4.9L10 14l3.63-2.9z" />
+        </svg>
+        <h2 class="">RSVP</h2>
+      </div>
+
       <div class="flex flex-col md:flex-row border-b border-gray-200 pb-4 mb-4">
+
         <div class="flex-1 flex flex-col md:flex-row ">
           <div class="w-full md:w-1/4 px-3 mb-6 md:mb-0">
             <label class="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2" for="grid-first-name">
