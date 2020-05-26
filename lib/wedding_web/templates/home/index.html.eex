@@ -113,7 +113,6 @@
             </div>
           </div>
 
-
           <div class="w-full md:w-1/4 px-3 mb-6 md:mb-0">
             <label class="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2 sm:visible md:invisible"
               for="grid-state">
@@ -133,7 +132,7 @@
           </div>
         </div>
       </div>
-      <div class="flex flex-col items-center md:flex-row border-b border-gray-200 pb-4 mb-4">
+      <div class="flex flex-col justify-center md:flex-row border-b border-gray-200 pb-4 mb-4">
         <div class="w-full md:w-1/4 px-3 mb-6 md:mb-0">
           <label class="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2" for="grid-state">
             Attending
@@ -162,18 +161,16 @@
         </label>
       </div>
 
-      <div class="flex flex-col items-center md:flex-row border-b border-gray-200 pb-4 mb-4">
-        <div class="w-full md:w-1/4 px-3 mb-6 md:mb-0">
-          <label class="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2" for="form[comments]">
-            Comments / special requirements
-          </label>
-        </div>
-
-        <label class="md:w-3/4 block font-bold text-gray-700">
-          <input
-            class="appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-200 rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white"
-            id="form[comments]" type="text" placeholder="">
+      <div class="flex flex-col justify-center md:flex-row border-b border-gray-200 pb-4 mb-4">
+        <label
+          class="w-full md:w-1/4 px-3 mb-6 md:mb-0 block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2"
+          for="form[comments]">
+          Comments / special requirements
         </label>
+
+        <input
+          class="md:w-3/4 block px-3 font-bold text-gray-700 appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-200 rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white"
+          id="form[comments]" type="text" placeholder="">
       </div>
 
       <div class="flex flex-col md:flex-row">
