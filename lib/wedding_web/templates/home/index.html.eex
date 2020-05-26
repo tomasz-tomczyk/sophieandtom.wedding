@@ -18,7 +18,7 @@
               Your name
             </label>
             <input
-              class="appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-200 rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white"
+              class="block w-full bg-gray-200 text-gray-700 border border-gray-200 rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white"
               id="grid-first-name" type="text" placeholder="">
           </div>
 
@@ -179,7 +179,7 @@
         </label>
 
         <input
-          class="md:w-3/4 block px-3 font-bold text-gray-700 appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-200 rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white"
+          class="md:w-3/4 block appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-200 rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white"
           id="form[comments]" type="text" placeholder="">
       </div>
 
@@ -192,6 +192,110 @@
               border duration-200 ease-in-out
               border-gray-600 transition">Submit</button>
         </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<div class="bg-gray-200">
+  <div class="container mx-auto">
+    <div class="p-5 mt-2 grid">
+      <div class="grid-cols-1">
+
+        <div class="flex items-center text-3xl font-semibold text-gray-800 px-3 mb-3">
+          <svg class="text-orange-400 fill-current w-6 h-6 items-center mr-2 " viewBox="0 0 20 20">
+            <path
+              d="M18 2a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V4c0-1.1.9-2 2-2h16zm-4.37 9.1L20 16v-2l-5.12-3.9L20 6V4l-10 8L0 4v2l5.12 4.1L0 14v2l6.37-4.9L10 14l3.63-2.9z" />
+          </svg>
+          <h2 class="">Contact us</h2>
+        </div>
+
+
+        <div class="flex flex-col sm:flex-row">
+          <!-- Card 4 -->
+          <div class="w-full md:w-1/2 p-2">
+            <div class="bg-white px-6 py-8 rounded-lg text-center flex  flex-wrap">
+              <div class="mb-3 w-full">
+                <img class="w-auto h-32 mx-auto rounded-full"
+                  src="<%= Routes.static_path(@conn, "/images/sophie.jpg") %>" alt="" />
+              </div>
+              <div class="w-full">
+                <h2 class="text-xl font-medium text-gray-700">Sophie</h2>
+              </div>
+
+
+              <div class="lg:w-1/2 mx-auto">
+
+                <div class="text-gray-400 mb-2 mx-auto text-left">
+                  <svg class="inline-block fill-current w-5 h-5 " viewBox="0 0 20 20">
+                    <path
+                      d="M18 2a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V4c0-1.1.9-2 2-2h16zm-4.37 9.1L20 16v-2l-5.12-3.9L20 6V4l-10 8L0 4v2l5.12 4.1L0 14v2l6.37-4.9L10 14l3.63-2.9z" />
+                  </svg>
+
+                  <a class="text-indigo-600 inline-block hover:text-orange-600 border-b-2 border-indigo-200 hover:border-orange-400 focus:text-orange-400 b-s-dotted"
+                    href="mailto:s.rawcliffe@hotmail.co.uk" target="_blank">
+                    <span>s.rawcliffe@hotmail.co.uk</span>
+                  </a>
+                </div>
+
+                <div class="text-gray-400 mb-2 text-left">
+                  <svg class="inline-block fill-current w-5 h-5 " viewBox="0 0 20 20">
+                    <path
+                      d="M17 11v3l-3-3H8a2 2 0 0 1-2-2V2c0-1.1.9-2 2-2h10a2 2 0 0 1 2 2v7a2 2 0 0 1-2 2h-1zm-3 2v2a2 2 0 0 1-2 2H6l-3 3v-3H2a2 2 0 0 1-2-2V8c0-1.1.9-2 2-2h2v3a4 4 0 0 0 4 4h6z" />
+                  </svg>
+
+                  <a class="text-indigo-600 inline-block hover:text-orange-600 border-b-2 border-indigo-200 hover:border-orange-400 focus:text-orange-400 b-s-dotted"
+                    href="tel:07864928233" target="_blank">
+                    <span>078649 28233</span>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Card 4 -->
+          <div class="w-full md:w-1/2 p-2">
+            <div class="bg-white px-6 py-8 rounded-lg text-center flex  flex-wrap">
+              <div class="mb-3 w-full">
+                <img class="w-auto h-32 mx-auto rounded-full" src="<%= Routes.static_path(@conn, "/images/tom.jpg") %>"
+                  alt="" />
+              </div>
+              <div class="w-full">
+                <h2 class="text-xl font-medium text-gray-700">Tom</h2>
+              </div>
+
+
+              <div class="lg:w-1/2 mx-auto">
+
+                <div class="text-gray-400 mb-2 mx-auto text-left">
+                  <svg class="inline-block fill-current w-5 h-5 " viewBox="0 0 20 20">
+                    <path
+                      d="M18 2a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V4c0-1.1.9-2 2-2h16zm-4.37 9.1L20 16v-2l-5.12-3.9L20 6V4l-10 8L0 4v2l5.12 4.1L0 14v2l6.37-4.9L10 14l3.63-2.9z" />
+                  </svg>
+
+                  <a class="text-indigo-600 inline-block hover:text-orange-600 border-b-2 border-indigo-200 hover:border-orange-400 focus:text-orange-400 b-s-dotted"
+                    href="mailto:me@tomasztomczyk.com" target="_blank">
+                    <span>me@tomasztomczyk.com</span>
+                  </a>
+                </div>
+
+                <div class="text-gray-400 mb-2 text-left">
+                  <svg class="inline-block fill-current w-5 h-5 " viewBox="0 0 20 20">
+                    <path
+                      d="M17 11v3l-3-3H8a2 2 0 0 1-2-2V2c0-1.1.9-2 2-2h10a2 2 0 0 1 2 2v7a2 2 0 0 1-2 2h-1zm-3 2v2a2 2 0 0 1-2 2H6l-3 3v-3H2a2 2 0 0 1-2-2V8c0-1.1.9-2 2-2h2v3a4 4 0 0 0 4 4h6z" />
+                  </svg>
+
+                  <a class="text-indigo-600 inline-block hover:text-orange-600 border-b-2 border-indigo-200 hover:border-orange-400 focus:text-orange-400 b-s-dotted"
+                    href="tel:07742401621" target="_blank">
+                    <span>077424 01621</span>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
       </div>
     </div>
   </div>
