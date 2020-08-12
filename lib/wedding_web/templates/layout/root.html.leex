@@ -17,7 +17,7 @@
 <body>
   <header class="container mx-auto">
     <div class="flex items-center justify-between">
-      <div class="px-4">
+      <div class="px-4 sm:w-1/2">
         <h1 class="flex items-center text-3xl font-bold text-gray-800 md:text-4xl my-0">Sophie <span
             class="text-orange-400 text-6xl amp mx-3 my-0 leading-none">&amp;</span>
           Tom</h1>
@@ -32,12 +32,10 @@
           </h3>
         </div>
 
-        <p class="mt-2 text-sm text-gray-700 md:text-base pr-2">We're getting married! If the pandemic ends, that
-          is.
-          We'd
-          love it if you could join us on the day!</p>
+        <p class="mt-2 text-sm text-gray-700 md:text-base pr-2">We're getting married! If the pandemic allows, that is.
+          We'd love it if you could join us on the day!</p>
       </div>
-      <div class="flex flex-row ">
+      <div class="flex flex-row sm:w-1/2">
         <div class="h-full"
           style="clip-path: polygon(14% 0, 100% 0, 100% 100%, 0 100%);  width: 252px; height: 200px; background-position-x: x-end; background-position-y: -50px; background-size: 360px; background-repeat: no-repeat; background-image: url(<%= Routes.static_path(@conn, "/images/header-photo.jpg") %>)">
           AA
@@ -64,7 +62,7 @@
             <div class="relative w-full md:w-2/5 h-full overflow-hidden rounded-t-lg md:rounded-t-none md:rounded-l-lg"
               style="min-height: 19rem;">
               <img class="absolute inset-0 w-full h-full object-cover object-center"
-                src="<%= Routes.static_path(@conn, "/images/croydon.jpg") %>" alt="">
+                src="<%= Routes.static_path(@conn, "/images/farm.jpg") %>" alt="">
               <div class="absolute inset-0 w-full h-full opacity-75"></div>
             </div>
             <div class="w-full md:w-3/5 h-full flex items-center bg-gray-100 rounded-lg">
@@ -81,7 +79,7 @@
                     <path
                       d="M10 20a10 10 0 1 1 0-20 10 10 0 0 1 0 20zm0-2a8 8 0 1 0 0-16 8 8 0 0 0 0 16zm-1-7.59V4h2v5.59l3.95 3.95-1.41 1.41L9 10.41z" />
                   </svg>
-                  <time class="text-orange-500" datetime="2020-09-26T15:00">15:00 - 16:00</time>
+                  <time class="text-orange-500" datetime="2020-09-26T15:00">15:00</time>
                 </div>
                 <div class="text-gray-600">
                   <div class="flex items-center text-gray-400">
@@ -89,12 +87,12 @@
                       <path d="M10 20S3 10.87 3 7a7 7 0 1 1 14 0c0 3.87-7 13-7 13zm0-11a2 2 0 1 0 0-4 2 2 0 0 0 0 4z" />
                     </svg>
 
-                    <span class="block text-gray-600">Croydon City Hall</span>
+                    <span class="block text-gray-600">Oaks Farm Weddings</span>
                   </div>
-                  Katharine St<br>Croydon<br>CR0 1NX
+                  Oaks Lane<br>Croydon<br>CR0 5HL
                 </div>
                 <a class="text-indigo-600 hover:text-orange-600 border-b-2 border-indigo-200 hover:border-orange-400 focus:text-orange-400 b-s-dotted"
-                  href="https://goo.gl/maps/o7zjwSYFhCh64MZz6" target="_blank">
+                  href="https://goo.gl/maps/1rbiu5863LCAstzt6" target="_blank">
                   <span>Google Maps</span>
                 </a>
 
@@ -103,10 +101,7 @@
                     <path
                       d="M2 14v-3H1a1 1 0 0 1-1-1 1 1 0 0 1 1-1h1l4-7h8l4 7h1a1 1 0 0 1 1 1 1 1 0 0 1-1 1h-1v6a1 1 0 0 1-1 1h-1a1 1 0 0 1-1-1v-1H5v1a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1v-3zm13.86-5L13 4H7L4.14 9h11.72zM5.5 14a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3zm9 0a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3z" />
                   </svg>
-                  <a class="text-indigo-600 hover:text-orange-600 border-b-2 border-indigo-200 hover:border-orange-400 focus:text-orange-400 b-s-dotted"
-                    href="https://goo.gl/maps/EXuh2Y8H2y7EiFCj6" target="_blank">
-                    <span>Parking</span>
-                  </a>
+                  <span class="text-gray-600">Parking at the venue</span>
                 </div>
               </div>
               <svg class="hidden md:block absolute inset-y-0 h-full w-24 fill-current text-gray-100 -ml-12"
@@ -121,48 +116,59 @@
             <div class="relative w-full md:w-2/5 h-full overflow-hidden rounded-t-lg md:rounded-t-none md:rounded-l-lg"
               style="min-height: 19rem;">
               <img class="absolute inset-0 w-full h-full object-cover object-center"
-                src="<%= Routes.static_path(@conn, "/images/dukes-head.jpg") %>" alt="">
+                src="<%= Routes.static_path(@conn, "/images/room.jpg") %>" alt="">
               <div class="absolute inset-0 w-full h-full opacity-75"></div>
             </div>
             <div class="w-full md:w-3/5 h-full flex items-center bg-gray-100 rounded-lg">
               <div class="p-12 md:pl-20 md:py-8">
-                <div class="flex items-center text-gray-400 -ml-6 mb-4">
+                <div class="flex items-center text-gray-400 -ml-6 mb-3">
                   <svg class="fill-current w-5 h-5 mr-1" viewBox="0 0 20 20">
-                    <path d="M9 18v-7L0 2V0h20v2l-9 9v7l5 1v1H4v-1l5-1zm2-10a2 2 0 1 0 0-4 2 2 0 0 0 0 4z" />
+                    <path d="M13 8V0L8.11 5.87 3 12h4v8L17 8h-4z"/>
                   </svg>
-                  <span class="text-gray-900 font-bold">Wedding Party</span>
+                  <span class="text-gray-900 font-bold">Arriving early?</span>
                 </div>
-                <div class="font-semibold text-gray-400 mb-4 -ml-6 flex items-center">
+                <div class="flex items-center text-gray-400 mb-4">
+                  <span class="text-gray-600">Tomasz will be at the location from around noon.<br>Please arrive around 2pm.</span>
+                </div>
+                <div class="flex items-center text-gray-400 -ml-6 mb-3">
                   <svg class="fill-current w-5 h-5 mr-1" viewBox="0 0 20 20">
-                    <path
-                      d="M10 20a10 10 0 1 1 0-20 10 10 0 0 1 0 20zm0-2a8 8 0 1 0 0-16 8 8 0 0 0 0 16zm-1-7.59V4h2v5.59l3.95 3.95-1.41 1.41L9 10.41z" />
+                    <path d="M2 12h18v6h-2v-2H2v2H0V2h2v10zm8-6h8a2 2 0 0 1 2 2v3H10V6zm-4 5a3 3 0 1 1 0-6 3 3 0 0 1 0 6z"/>
                   </svg>
-                  <time class="text-orange-500" datetime="2020-09-26T16:00">16:00 - 22:00</time>
+                  <span class="text-gray-900 font-bold">Staying the night?</span>
                 </div>
                 <div class="text-gray-600">
                   <div class="flex items-center text-gray-400">
                     <svg class="fill-current w-5 h-5 mr-1 -ml-6" viewBox="0 0 20 20">
-                      <path d="M10 20S3 10.87 3 7a7 7 0 1 1 14 0c0 3.87-7 13-7 13zm0-11a2 2 0 1 0 0-4 2 2 0 0 0 0 4z" />
+                      <path d="M12.95 10.707l.707-.707L8 4.343 6.586 5.757 10.828 10l-4.242 4.243L8 15.657l4.95-4.95z"/>
                     </svg>
 
-                    <span class="block text-gray-600">The Duke's Head</span>
+                    <a class="text-indigo-600 hover:text-orange-600 border-b-2 border-indigo-200 hover:border-orange-400 focus:text-orange-400 b-s-dotted"
+                      href="https://goo.gl/maps/UKVsbTrkaFUdYcJs6" target="_blank">
+                      <span>Premier Inn</span>
+                    </a>
                   </div>
-                  379 Croydon Rd<br>
-                  Wallington<br>
-                  SM6 0BW
-                </div>
-                <a class="text-indigo-600 hover:text-orange-600 border-b-2 border-indigo-200 hover:border-orange-400 focus:text-orange-400 b-s-dotted"
-                  href="https://goo.gl/maps/o7zjwSYFhCh64MZz6" target="_blank">
-                  <span>Google Maps</span>
-                </a>
+                  <div class="flex items-center text-gray-400">
+                    <svg class="fill-current w-5 h-5 mr-1 -ml-6" viewBox="0 0 20 20">
+                      <path d="M12.95 10.707l.707-.707L8 4.343 6.586 5.757 10.828 10l-4.242 4.243L8 15.657l4.95-4.95z"/>
+                    </svg>
 
-                <div class="flex items-center text-gray-400 -ml-6 mt-2">
-                  <svg class="fill-current w-5 h-5 mr-1" viewBox="0 0 20 20">
-                    <path
-                      d="M2 14v-3H1a1 1 0 0 1-1-1 1 1 0 0 1 1-1h1l4-7h8l4 7h1a1 1 0 0 1 1 1 1 1 0 0 1-1 1h-1v6a1 1 0 0 1-1 1h-1a1 1 0 0 1-1-1v-1H5v1a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1v-3zm13.86-5L13 4H7L4.14 9h11.72zM5.5 14a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3zm9 0a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3z" />
-                  </svg>
-                  <span class=" text-gray-600">Park at the vanue</span>
+                    <a class="text-indigo-600 hover:text-orange-600 border-b-2 border-indigo-200 hover:border-orange-400 focus:text-orange-400 b-s-dotted"
+                      href="https://goo.gl/maps/5Hshwn1JscC9FN2q8" target="_blank">
+                      <span>Croham Park Bed & Breakfast</span>
+                    </a>
+                  </div>
+                  <div class="flex items-center text-gray-400">
+                    <svg class="fill-current w-5 h-5 mr-1 -ml-6" viewBox="0 0 20 20">
+                      <path d="M12.95 10.707l.707-.707L8 4.343 6.586 5.757 10.828 10l-4.242 4.243L8 15.657l4.95-4.95z"/>
+                    </svg>
+
+                    <a class="text-indigo-600 hover:text-orange-600 border-b-2 border-indigo-200 hover:border-orange-400 focus:text-orange-400 b-s-dotted"
+                      href="https://g.page/HamptonLondonCroydon?share" target="_blank">
+                      <span>Hilton London Croydon</span>
+                    </a>
+                  </div>
                 </div>
+
 
               </div>
               <svg class="hidden md:block absolute inset-y-0 h-full w-24 fill-current text-gray-100 -ml-12"
@@ -175,7 +181,9 @@
       </div>
     </div>
   </div>
+
   <%= @inner_content %>
+
 </body>
 
 </html>
