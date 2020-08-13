@@ -108,3 +108,11 @@
 .alert:empty {
   display: none;
 }
+
+input:checked + svg {
+  display: block;
+}
+
+label {
+  cursor: pointer;
+}
