@@ -3,8 +3,6 @@ defmodule WeddingWeb.FormLive do
   use Phoenix.HTML
 
   def handle_event("submit", values, socket) do
-    IO.inspect(values)
-
     fields =
       values
       |> Map.take(["Name", "Attending", "Starter", "Main", "Dessert", "Comments"])
@@ -19,7 +17,7 @@ defmodule WeddingWeb.FormLive do
     {:noreply, assign(socket, :submitted, false)}
   end
 
-  def mount(_params, assigns, socket) do
+  def mount(_params, _assigns, socket) do
     {:ok, assign(socket, :submitted, false)}
   end
 end
