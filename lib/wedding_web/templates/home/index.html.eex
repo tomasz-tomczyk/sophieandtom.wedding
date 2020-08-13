@@ -1,261 +1,70 @@
-<div class="container mx-auto">
-  <div class="p-5 mt-2 grid">
-    <div class="grid-cols-1">
+<%= live_render(@conn, WeddingWeb.FormLive) %>
 
-      <div class="flex items-center text-3xl font-semibold text-gray-800 pr-3 mb-3">
-        <svg class="text-orange-400 fill-current w-6 h-6 items-center mr-2 " viewBox="0 0 20 20">
-          <path
-            d="M18 2a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V4c0-1.1.9-2 2-2h16zm-4.37 9.1L20 16v-2l-5.12-3.9L20 6V4l-10 8L0 4v2l5.12 4.1L0 14v2l6.37-4.9L10 14l3.63-2.9z" />
-        </svg>
-        <h2 class="">RSVP</h2>
-      </div>
-
-      <div class="flex flex-col justify-center md:flex-row border-b border-gray-200 mb-4">
-        <label
-          class="w-full md:w-1/3 mb-2 md:mb-0 block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2"
-          for="name">
-          Your name
-        </label>
-
-        <input
-          class="md:w-2/3 block appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-200 rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white"
-          id="name" type="text" name="name" placeholder="">
-      </div>
-
-      <div class="flex flex-col justify-center md:flex-row border-b border-gray-200 mb-4 pb-2">
-        <div class="w-full md:w-1/3 mb-2 md:mb-0">
-          <label class="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2" for="grid-state">
-            Attending
-          </label>
+<div class="bg-orange-200">
+  <div class="container mx-auto">
+    <div class="p-5 grid">
+      <div class="grid-cols-1">
+        <div class="flex items-center text-3xl font-semibold text-gray-800 pr-3 mb-3">
+          <svg class="text-orange-400 fill-current w-6 h-6 items-center mr-2 " viewBox="0 0 20 20">
+            <path d="M2.93 17.07A10 10 0 1 1 17.07 2.93 10 10 0 0 1 2.93 17.07zM9 5v6h2V5H9zm0 8v2h2v-2H9z"/>
+          </svg>
+          <h2 class="">COVID-19</h2>
         </div>
-        <div class="w-full md:w-1/3 mb-2 md:mb-0">
-          <label class="flex justify-start items-start">
-            <div class="bg-white border-2 rounded-full border-gray-400 w-6 h-6 flex flex-shrink-0 justify-center items-center mr-2 focus-within:border-blue-500">
-              <input type="radio" name="attending" class="opacity-0 absolute">
-              <svg class="fill-current hidden w-4 h-4 text-green-500 pointer-events-none" viewBox="0 0 20 20"><path d="M0 11l2-2 5 5L18 3l2 2L7 18z"/></svg>
-            </div>
-            <div class="select-none">Yes</div>
-          </label>
-        </div>
-        <div class="w-full md:w-1/3 mb-2 md:mb-0">
-          <label class="flex justify-start items-start">
-            <div class="bg-white border-2 rounded-full border-gray-400 w-6 h-6 flex flex-shrink-0 justify-center items-center mr-2 focus-within:border-blue-500">
-              <input type="radio" name="attending" class="opacity-0 absolute">
-              <svg class="fill-current hidden w-4 h-4 text-red-500 pointer-events-none" viewBox="0 0 20 20"><path d="M10 8.586L2.929 1.515 1.515 2.929 8.586 10l-7.071 7.071 1.414 1.414L10 11.414l7.071 7.071 1.414-1.414L11.414 10l7.071-7.071-1.414-1.414L10 8.586z"/></svg>
-            </div>
-            <div class="select-none">No</div>
-          </label>
-        </div>
-      </div>
 
-      <div class="flex flex-col md:flex-row">
-        <div class="flex-1 flex flex-col md:flex-row ">
-          <div class="w-full md:w-1/3 mb-6 md:pr-6">
-            <label class="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2" for="grid-state">
-              Starter
-            </label>
-            <div class="relative">
-              <label class="flex justify-start items-start mb-2">
-                <div class="bg-white border-2 rounded-full border-gray-400 w-6 h-6 flex flex-shrink-0 justify-center items-center mr-2 focus-within:border-blue-500">
-                  <input type="radio" name="starter" class="opacity-0 absolute">
-                  <svg class="fill-current hidden w-4 h-4 text-green-500 pointer-events-none" viewBox="0 0 20 20"><path d="M0 11l2-2 5 5L18 3l2 2L7 18z"/></svg>
-                </div>
-                <div class="select-none">Grilled field mushroom with Parma ham & Parmesan cheese crust (GF)</div>
-              </label>
-              <label class="flex justify-start items-start mb-2">
-                <div class="bg-white border-2 rounded-full border-gray-400 w-6 h-6 flex flex-shrink-0 justify-center items-center mr-2 focus-within:border-blue-500">
-                  <input type="radio" name="starter" class="opacity-0 absolute">
-                  <svg class="fill-current hidden w-4 h-4 text-green-500 pointer-events-none" viewBox="0 0 20 20"><path d="M0 11l2-2 5 5L18 3l2 2L7 18z"/></svg>
-                </div>
-                <div class="select-none">Home made butternut squash soup (V)</div>
-              </label>
-              <label class="flex justify-start items-start">
-                <div class="bg-white border-2 rounded-full border-gray-400 w-6 h-6 flex flex-shrink-0 justify-center items-center mr-2 focus-within:border-blue-500">
-                  <input type="radio" name="starter" class="opacity-0 absolute">
-                  <svg class="fill-current hidden w-4 h-4 text-green-500 pointer-events-none" viewBox="0 0 20 20"><path d="M0 11l2-2 5 5L18 3l2 2L7 18z"/></svg>
-                </div>
-                <div class="select-none">Tiger prawns smothered in pesto served on a bed of leaves</div>
-              </label>
+        <div class="flex flex-col sm:flex-row">
+          <div class="w-full md:w-1/2 md:pr-6">
+            <div class="flex text-gray-600 mb-4">
+              <div class="text-gray-700">
+                <span class="text-orange-600 font-bold underline">Please bring a face mask.</span>
+                <span>You must wear it indoors, unless you're sitting down for a meal. We are hoping to have the ceremony outside if the weather permits, in which case you would not have to wear one.</span>
+              </div>
             </div>
           </div>
 
-          <div class="w-full md:w-1/3 mb-6">
-            <label class="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2" for="grid-state">
-              Main
-            </label>
-            <div class="relative">
-              <label class="flex justify-start items-start mb-2">
-                <div class="bg-white border-2 rounded-full border-gray-400 w-6 h-6 flex flex-shrink-0 justify-center items-center mr-2 focus-within:border-blue-500">
-                  <input type="radio" name="main" class="opacity-0 absolute">
-                  <svg class="fill-current hidden w-4 h-4 text-green-500 pointer-events-none" viewBox="0 0 20 20"><path d="M0 11l2-2 5 5L18 3l2 2L7 18z"/></svg>
-                </div>
-                <div class="select-none">Succulent roast chicken, served with stuffing, Yorkshire pudding and a rich onion gravy</div>
-              </label>
-              <label class="flex justify-start items-start mb-2">
-                <div class="bg-white border-2 rounded-full border-gray-400 w-6 h-6 flex flex-shrink-0 justify-center items-center mr-2 focus-within:border-blue-500">
-                  <input type="radio" name="main" class="opacity-0 absolute">
-                  <svg class="fill-current hidden w-4 h-4 text-green-500 pointer-events-none" viewBox="0 0 20 20"><path d="M0 11l2-2 5 5L18 3l2 2L7 18z"/></svg>
-                </div>
-                <div class="select-none">Classic Beef Wellington</div>
-              </label>
-              <label class="flex justify-start items-start">
-                <div class="bg-white border-2 rounded-full border-gray-400 w-6 h-6 flex flex-shrink-0 justify-center items-center mr-2 focus-within:border-blue-500">
-                  <input type="radio" name="main" class="opacity-0 absolute">
-                  <svg class="fill-current hidden w-4 h-4 text-green-500 pointer-events-none" viewBox="0 0 20 20"><path d="M0 11l2-2 5 5L18 3l2 2L7 18z"/></svg>
-                </div>
-                <div class="select-none">Singapore noodles (V)</div>
-              </label>
-
-            <div class="flex-row mt-4 md:hidden">
-              <div class="mt-2 text-gray-500 flex">
-              <svg class="fill-current w-5 h-5 mr-1 ml-3" viewBox="0 0 20 20">
-                <path d="M18 11v7a2 2 0 0 1-4 0v-5h-2V3a3 3 0 0 1 3-3h3v11zM4 10a2 2 0 0 1-2-2V1a1 1 0 0 1 2 0v4h1V1a1 1 0 0 1 2 0v4h1V1a1 1 0 0 1 2 0v7a2 2 0 0 1-2 2v8a2 2 0 0 1-4 0v-8z"/>
-                <%# <path d="M2.93 17.07A10 10 0 1 1 17.07 2.93 10 10 0 0 1 2.93 17.07zm12.73-1.41A8 8 0 1 0 4.34 4.34a8 8 0 0 0 11.32 11.32zM9 11V9h2v6H9v-4zm0-6h2v2H9V5z"/> %>
-              </svg>
-
-              Main served with roast potatoes & seasonal vegetables</div>
-            </div>
+          <div class="w-full md:w-1/2 md:px-4">
+            <div class="flex text-gray-600">
+              <div class="text-gray-700">
+              <p class="mb-2">
+                <span class="text-orange-600 font-bold underline">Please social distance.</span>
+                Please try to maintain the 1 metre social distancing where possible. You will be seated at dinner with a one metre distance between you and people outside your household. Couples will be seated together.
+                </p>
+                <p>Unfortunately this means we can't have a dance floor.</p>
+              </div>
             </div>
           </div>
-
-          <div class="w-full md:w-1/3 mb-6 md:mb-0">
-            <label class="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2" for="grid-state">
-              Dessert
-            </label>
-            <div class="relative">
-              <label class="flex justify-start items-start mb-2">
-                <div class="bg-white border-2 rounded-full border-gray-400 w-6 h-6 flex flex-shrink-0 justify-center items-center mr-2 focus-within:border-blue-500">
-                  <input type="radio" name="dessert" class="opacity-0 absolute">
-                  <svg class="fill-current hidden w-4 h-4 text-green-500 pointer-events-none" viewBox="0 0 20 20"><path d="M0 11l2-2 5 5L18 3l2 2L7 18z"/></svg>
-                </div>
-                <div class="select-none">Vanilla & Seasonal Berry Cheesecake</div>
-              </label>
-              <label class="flex justify-start items-start mb-2">
-                <div class="bg-white border-2 rounded-full border-gray-400 w-6 h-6 flex flex-shrink-0 justify-center items-center mr-2 focus-within:border-blue-500">
-                  <input type="radio" name="dessert" class="opacity-0 absolute">
-                  <svg class="fill-current hidden w-4 h-4 text-green-500 pointer-events-none" viewBox="0 0 20 20"><path d="M0 11l2-2 5 5L18 3l2 2L7 18z"/></svg>
-                </div>
-                <div class="select-none">Chocolate Brownie (V, GF)</div>
-              </label>
-              <label class="flex justify-start items-start">
-                <div class="bg-white border-2 rounded-full border-gray-400 w-6 h-6 flex flex-shrink-0 justify-center items-center mr-2 focus-within:border-blue-500">
-                  <input type="radio" name="dessert" class="opacity-0 absolute">
-                  <svg class="fill-current hidden w-4 h-4 text-green-500 pointer-events-none" viewBox="0 0 20 20"><path d="M0 11l2-2 5 5L18 3l2 2L7 18z"/></svg>
-                </div>
-                <div class="select-none">Fruit Salad (V, GF, Vegan)</div>
-              </label>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <div class="flex-row border-b border-gray-200 pb-4 mb-4 mt-4 hidden md:block">
-        <div class="mt-2 text-gray-500 flex">
-        <svg class="fill-current w-5 h-5 mr-1" viewBox="0 0 20 20">
-          <path d="M18 11v7a2 2 0 0 1-4 0v-5h-2V3a3 3 0 0 1 3-3h3v11zM4 10a2 2 0 0 1-2-2V1a1 1 0 0 1 2 0v4h1V1a1 1 0 0 1 2 0v4h1V1a1 1 0 0 1 2 0v7a2 2 0 0 1-2 2v8a2 2 0 0 1-4 0v-8z"/>
-          <%# <path d="M2.93 17.07A10 10 0 1 1 17.07 2.93 10 10 0 0 1 2.93 17.07zm12.73-1.41A8 8 0 1 0 4.34 4.34a8 8 0 0 0 11.32 11.32zM9 11V9h2v6H9v-4zm0-6h2v2H9V5z"/> %>
-        </svg>
-
-        Main served with roast potatoes & seasonal vegetables</div>
-      </div>
-
-      <div class="flex flex-col justify-center md:flex-row pb-4 mb-4">
-        <label
-          class="w-full md:w-1/3 mb-6 md:mb-0 block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2"
-          for="comments">
-          Comments / special requirements
-        </label>
-
-        <input
-          class="md:w-2/3 block appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-200 rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white"
-          id="comments" name="comments" type="text" placeholder="">
-      </div>
-
-      <div class="flex flex-col md:flex-row">
-        <div class="flex flex-col md:flex-row">
-          <button class="text-sm  mx-2 w-32 focus:outline-none flex justify-center px-4 py-2 rounded font-bold cursor-pointer
-              hover:bg-orange-500 hover:text-orange-100
-              bg-gray-100
-              text-gray-700
-              border duration-200 ease-in-out
-              border-gray-600 transition">Submit</button>
-
-              <%# <a title="Add to Calendar" class="addeventatc" data-id="NA5044141" href="https://www.addevent.com/event/NA5044141" target="_blank" rel="nofollow">Add to Calendar</a>
-	            <script type="text/javascript" src="https://addevent.com/libs/atc/1.6.1/atc.min.js" async defer></script> %>
         </div>
       </div>
     </div>
   </div>
 </div>
 
+<div class="container mx-auto">
+  <div class="p-5 grid">
+    <div class="grid-cols-1">
+      <div class="flex items-center text-3xl font-semibold text-gray-800 pr-3 mb-3">
+        <svg class="text-orange-400 fill-current w-6 h-6 items-center mr-2 " viewBox="0 0 20 20">
+          <path d="M16 6v2h2l2 12H0L2 8h2V6a6 6 0 1 1 12 0zm-2 0a4 4 0 1 0-8 0v2h8V6zM4 10v2h2v-2H4zm10 0v2h2v-2h-2z"/>
+        </svg>
+        <h2 class="">Gifts</h2>
+      </div>
 
-  <div class="bg-orange-200">
-    <div class="container mx-auto">
-      <div class="p-5 grid">
-        <div class="grid-cols-1">
-          <div class="flex items-center text-3xl font-semibold text-gray-800 pr-3 mb-3">
-            <svg class="text-orange-400 fill-current w-6 h-6 items-center mr-2 " viewBox="0 0 20 20">
-              <path d="M2.93 17.07A10 10 0 1 1 17.07 2.93 10 10 0 0 1 2.93 17.07zM9 5v6h2V5H9zm0 8v2h2v-2H9z"/>
-            </svg>
-            <h2 class="">COVID-19</h2>
-          </div>
-
-          <div class="flex flex-col sm:flex-row">
-            <div class="w-full md:w-1/2 md:pr-6">
-              <div class="flex text-gray-600 mb-4">
-                <div class="text-gray-700">
-                  <span class="text-orange-600 font-bold underline">Please bring a face mask.</span>
-                  <span>You must wear it indoors, unless you're sitting down for a meal. If the weather permits and we're able to hold the ceremony outdoors, you don't have to wear it then.</span>
-                </div>
-              </div>
-            </div>
-
-            <div class="w-full md:w-1/2 md:px-4">
-              <div class="flex text-gray-600">
-                <div class="text-gray-700">
-                <p class="mb-2">
-                  <span class="text-orange-600 font-bold underline">Please social distance.</span>
-                  Please try to maintain the 1 meter social distancing where possible. You will be seated at dinner with social distancing in mind with people outside your household.
-                  </p>
-                  <p>Unfortunately this means we can't have a dance floor.</p>
-                </div>
-              </div>
+      <div class="flex flex-col sm:flex-row">
+        <div class="w-full">
+          <div class="flex text-gray-600 mb-4">
+            <div class="text-gray-700">
+              <p>We're not registered for gifts. If you'd like to, feel free to contribute to our honeymoon fund (when we can go away!) using Monzo links below or get in touch with us.</p>
             </div>
           </div>
         </div>
       </div>
     </div>
   </div>
-
-
-    <div class="container mx-auto">
-      <div class="p-5 grid">
-        <div class="grid-cols-1">
-          <div class="flex items-center text-3xl font-semibold text-gray-800 pr-3 mb-3">
-            <svg class="text-orange-400 fill-current w-6 h-6 items-center mr-2 " viewBox="0 0 20 20">
-              <path d="M16 6v2h2l2 12H0L2 8h2V6a6 6 0 1 1 12 0zm-2 0a4 4 0 1 0-8 0v2h8V6zM4 10v2h2v-2H4zm10 0v2h2v-2h-2z"/>
-            </svg>
-            <h2 class="">Gifts</h2>
-          </div>
-
-          <div class="flex flex-col sm:flex-row">
-            <div class="w-full">
-              <div class="flex text-gray-600 mb-4">
-                <div class="text-gray-700">
-                  <p>We're not registered for gifts. If you'd like to, feel free to contribute to our honeymoon fund (when we can go away!) using Monzo links below or get in touch with us.</p>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
+</div>
 
 <div class="bg-gray-200">
   <div class="container mx-auto">
     <div class="p-5 grid">
       <div class="grid-cols-1">
-
         <div class="flex items-center text-3xl font-semibold text-gray-800 pr-3 mb-3">
           <svg class="text-orange-400 fill-current w-6 h-6 items-center mr-2 " viewBox="0 0 20 20">
             <path
@@ -264,9 +73,7 @@
           <h2 class="">Contact us</h2>
         </div>
 
-
         <div class="flex flex-col sm:flex-row">
-          <!-- Card 4 -->
           <div class="w-full md:w-1/2 py-2 pr-6">
             <div class="bg-white px-6 py-8 rounded-lg text-center flex  flex-wrap">
               <div class="mb-3 w-full">
@@ -316,7 +123,6 @@
             </div>
           </div>
 
-          <!-- Card 4 -->
           <div class="w-full md:w-1/2 py-2">
             <div class="bg-white px-6 py-8 rounded-lg text-center flex  flex-wrap">
               <div class="mb-3 w-full">
@@ -327,9 +133,7 @@
                 <h2 class="text-xl font-medium text-gray-700">Tom</h2>
               </div>
 
-
               <div class="lg:w-1/2 mx-auto">
-
                 <div class="text-gray-400 mb-2 mx-auto text-left">
                   <svg class="inline-block fill-current w-5 h-5 " viewBox="0 0 20 20">
                     <path
@@ -368,7 +172,6 @@
             </div>
           </div>
         </div>
-
       </div>
     </div>
   </div>
