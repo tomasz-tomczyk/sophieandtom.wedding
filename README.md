@@ -1,5 +1,6 @@
 # Wedding
 
+
 To start your Phoenix server:
 
   * Setup the project with `mix setup`
