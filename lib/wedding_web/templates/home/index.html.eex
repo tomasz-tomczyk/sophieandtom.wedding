@@ -15,8 +15,8 @@
           <div class="w-full md:w-1/3 md:pr-6">
             <div class="flex text-gray-600 mb-4">
               <div class="text-gray-700">
-                <span class="text-orange-600 font-bold underline">Please bring a face mask.</span>
-                <span>You must wear it indoors, unless you're sitting down for a meal. We are hoping to have the ceremony outside if the weather permits, in which case you would not have to wear one.</span>
+                <%= link("Please read the venue instructions.", to: "/covid-venue-instructions.pdf", class: "text-orange-600 font-bold underline") %>
+                <span>Oaks Farm has prepared a very detailed guide that we're asking everyone to read and follow on the day. <%= link("Please click here to read it", to: "/covid-venue-instructions.pdf", class: "text-orange-600 font-bold underline") %>. </span>
               </div>
             </div>
           </div>
@@ -36,8 +36,8 @@
           <div class="w-full md:w-1/3 md:pr-6">
             <div class="flex text-gray-600 mb-4">
               <div class="text-gray-700">
-                <%= link("Please read the venue instructions.", to: "/covid-venue-instructions.pdf", class: "text-orange-600 font-bold underline") %>
-                <span>Oaks Farm has prepared a very detailed guide that we're asking everyone to read and follow on the day. <%= link("Please click here to read it", to: "/covid-venue-instructions.pdf", class: "text-orange-600 font-bold underline") %>. </span>
+                <span class="text-orange-600 font-bold underline">Please bring a face mask.</span>
+                <span>You must wear it indoors, unless you're sitting down for a meal. We are hoping to have the ceremony outside if the weather permits, in which case you would not have to wear one.</span>
               </div>
             </div>
           </div>
